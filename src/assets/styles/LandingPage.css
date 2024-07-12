@@ -1,32 +1,49 @@
-.landing-page{
+/* Mobile-first styles */
+.landing-page {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     background-size: cover;
 
     height: 100vh;
     width: 100vw;
-    background-image: url('../images/hero-2.svg') ;
+    background-image: url('../images/hero-2.svg');
 }
-.landing-page .logo{
-    width: 80px;
+
+.landing-page .logo {
+    width: 110px;
+    margin-bottom: -60px;
 }
-.landing-page p{
+
+.landing-page p {
     font-family: Inter;
     margin-bottom: -230px;
     color: #2195f380;
-    font-size: 200px;
+    font-size: 50px; /* Adjusted for mobile */
     font-weight: 700;
     z-index: 1;
 }
-.landing-page h1{
+
+.landing-page h6 {
+    position: relative;
+    margin-bottom: -20px;
+    font-family: Dancing Script;
+    background: -webkit-linear-gradient(#ffffff, #2196F3);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 48px; /* Adjusted for mobile */
+    font-weight: 900;
+}
+
+.landing-page h1 {
     font-family: Inter;
     color: #fff;
-    font-size: 64px;
+    font-size: 36px; /* Adjusted for mobile */
     font-weight: 700;
 }
 
-.landing-page button{
+.landing-page button {
     border: none;
     border-radius: 30px;
     padding: 12px 50px;
@@ -34,4 +51,38 @@
     font-weight: 600;
     color: #fff;
     background-color: #2196F3;
+    /* margin-top: 120px; */
+}
+
+/* Styles for larger screens */
+@media (min-width: 768px) {
+    .landing-page p {
+        font-size: 100px;
+    }
+
+    .landing-page h6 {
+        font-size: 42px;
+        margin-bottom: -30px;
+
+    }
+
+    .landing-page h1 {
+        font-size: 48px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .landing-page p {
+        font-size: 200px;
+    }
+
+    .landing-page h6 {
+        font-size: 84px;
+        margin-bottom: -40px;
+
+    }
+
+    .landing-page h1 {
+        font-size: 64px;
+    }
 }

@@ -7,8 +7,9 @@ const LandingPage = () => {
         <div className="landing-page">
             <div className="container">
                 <div className="d-block text-center">
-                    <img src={logo} className='logo' alt="logo" />
-                    <p>Discover</p>
+                    {/* <img src={logo} className='logo' alt="logo" /> */}
+                    {/* <p>dHorses</p> */}
+                    <h6>Discover</h6>
                     <h1 className='mb-3'>Your Perfect Horse <br/>Ride Experience</h1>
                     <button type="button">Book Now</button>
                 </div>
