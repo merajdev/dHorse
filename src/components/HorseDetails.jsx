@@ -1,16 +1,8 @@
-// src/components/HorseDetails.jsx
-
 import React from 'react';
 import '../assets/styles/HorseDetails.css';
-// Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';
-
-// Import Swiper styles
 import 'swiper/css';
 import 'swiper/css/pagination';
-
-
-// import required modules
 import { Autoplay, Pagination } from 'swiper/modules';
 
 const horses = [
